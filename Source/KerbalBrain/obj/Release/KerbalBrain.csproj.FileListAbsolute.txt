@@ -1,0 +1,4 @@
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\bin\Release\KerbalBrain.dll
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\bin\Release\KerbalBrain.pdb
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\obj\Release\KerbalBrain.dll
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\obj\Release\KerbalBrain.pdb

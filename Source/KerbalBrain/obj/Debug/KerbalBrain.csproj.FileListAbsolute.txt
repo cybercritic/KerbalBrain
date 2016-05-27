@@ -1,0 +1,5 @@
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\bin\Debug\KerbalBrain.dll
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\bin\Debug\KerbalBrain.pdb
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\obj\Debug\KerbalBrain.dll
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\obj\Debug\KerbalBrain.pdb
+E:\fastLoad\Visual Studio Projects\KerbalBrain\KerbalBrain\obj\Debug\KerbalBrain.csprojResolveAssemblyReference.cache
