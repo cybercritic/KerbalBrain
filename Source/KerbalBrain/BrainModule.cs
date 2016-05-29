@@ -48,7 +48,7 @@ namespace KerbalBrain
         }
 
         //on/off switch for brain/eva mode
-        [KSPField(guiActive = true, guiActiveEditor =false, guiName = "Brain Status"), UI_Toggle(disabledText = "Off", enabledText = "On")]
+        [KSPField(guiActive = true, guiActiveEditor =true, guiName = "Brain Status", isPersistant = true), UI_Toggle(disabledText = "Off", enabledText = "On")]
         public bool isActivated = false;
         
         public void BrainSwitch()
