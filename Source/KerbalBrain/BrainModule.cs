@@ -111,7 +111,10 @@ namespace KerbalBrain
             else
             {
                 //change back from eva
-                this.part.vessel.vesselType = this.originalType;
+                if (this.originalType != VesselType.EVA)
+                    this.part.vessel.vesselType = this.originalType;
+                else
+                    this.part.vessel.vesselType = VesselType.Probe;
 
                 //set inventory back to what it was
                 ModuleKISInventory inventory = this.part.Modules.GetModule<ModuleKISInventory>();
