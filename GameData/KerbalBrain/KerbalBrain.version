@@ -2,7 +2,7 @@
 	"NAME": "KerbalBrain",
 	"URL": "https://raw.githubusercontent.com/cybercritic/KerbalBrain/master/GameData/KerbalBrain/KerbalBrain.version",
 	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/cybercritic/KerbalBrain/master/changelog.md",
-	"DOWNLOAD": "",
+	"DOWNLOAD": "https://github.com/cybercritic/KerbalBrain/releases",
 	"GITHUB":
 	{
 		"USERNAME": "cybercritic",
@@ -12,7 +12,7 @@
 	"VERSION":{
     "MAJOR":0,
     "MINOR":1,
-    "PATCH":0,
+    "PATCH":3,
     "BUILD":0
   },
   "KSP_VERSION":{

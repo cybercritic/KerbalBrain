@@ -7,9 +7,11 @@ namespace KerbalBrain
     public class BrainModule : PartModule
     {
         private bool activated = false;
-        private VesselType originalType = VesselType.Unknown;
         private ModuleKISInventory.InventoryType originalInventory = ModuleKISInventory.InventoryType.Container;
 
+        [KSPField(isPersistant = true, guiActive = false)]
+        public int originalType = (int)VesselType.Probe;
+        
         public override void OnStart(StartState state)
         {
             print("[KBrain] OnStart");
@@ -82,6 +84,7 @@ namespace KerbalBrain
                         //check so we don't loop indefinately
                         if(abort++ > 128)
                         {
+                            this.isActivated = activated;
                             print("[KBrain] Couldn't find a brain with RepairSkill, aborting.");
                             return;
                         }
@@ -92,7 +95,8 @@ namespace KerbalBrain
                 }
 
                 //change to eva
-                this.originalType = this.vessel.vesselType;
+                if(this.vessel.vesselType != VesselType.EVA)
+                    this.originalType = (int)this.vessel.vesselType;
                 this.vessel.vesselType = VesselType.EVA;
 
                 //set inventory to eva
@@ -111,9 +115,9 @@ namespace KerbalBrain
             else
             {
                 //change back from eva
-                if (this.originalType != VesselType.EVA)
-                    this.part.vessel.vesselType = this.originalType;
-                else
+                if (this.originalType != (int)VesselType.EVA)
+                    this.part.vessel.vesselType = (VesselType)this.originalType;
+                else 
                     this.part.vessel.vesselType = VesselType.Probe;
 
                 //set inventory back to what it was
