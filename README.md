@@ -9,4 +9,4 @@ Intended for use with KIS, this mod will allow your unmanned probes to use tools
 - Functional inventory on/off eva
 - Able to equip KIS parts during eva
 - Able to use KIS parts during eva
-- NOTE - Objects on the same vessel as the Kerbal Brain are not intractable during eva
+- NOTE - Inventories on the same vessel during eva are disabled
